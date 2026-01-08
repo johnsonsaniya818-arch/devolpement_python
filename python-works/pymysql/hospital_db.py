@@ -22,7 +22,7 @@ class Hospital:
                  
                  print(e)
 
-    def add_patient(self,**kwargs):
+    def POST(self,**kwargs):
          
         try:
          
@@ -56,7 +56,7 @@ class Hospital:
 
             print(e)
     
-    def select_all(self,):
+    def GET(self,):
          
         try:
          
@@ -74,7 +74,7 @@ class Hospital:
              
              print(e)
 
-    def select_one(self,id=None):
+    def GET(self,id=None):
          
          query="select * from hospital where id=%s"
 
@@ -86,7 +86,7 @@ class Hospital:
 
          print(records)
 
-    def delete_patient(self,id=None):
+    def DELETE(self,id=None):
          
          query="delete from hospital where id=%s"
 
@@ -98,7 +98,7 @@ class Hospital:
 
          print("record is deleted")
 
-    def update_hospital(self,id,**kwargs):
+    def PUT(self,id,**kwargs):
         
         try:
 
@@ -132,16 +132,16 @@ class Hospital:
 
 hospital_instance=Hospital()
 
-#hospital_instance.add_patient(patient_name="kunju",patient_age=12,disease="heart disease",phone=647457812)
+hospital_instance.POST(patient_name="kunju",patient_age=12,disease="heart disease",phone=647457812)
 
-#hospital_instance.select_all()
+hospital_instance.GET()
 
-#hospital_instance.select_one(7)
+hospital_instance.GET(7)
 
-#hospital_instance.delete_patient(16)
+hospital_instance.DELETE(16)
 
-#hospital_instance.update_hospital(7,patient_age=22)
+hospital_instance.PUT(7,patient_age=22)
 
-#hospital_instance.select_all()
+hospital_instance.GET()
 
 
