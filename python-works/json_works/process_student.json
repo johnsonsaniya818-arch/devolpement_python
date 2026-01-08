@@ -1,0 +1,10 @@
+[
+    {"rol":123,"name":"manu","course":"python","gender":"male"},
+    {"rol":124,"name":"madu","course":"testing","gender":"female"},
+    {"rol":125,"name":"vinu","course":"ml","gender":"male"},
+    {"rol":126,"name":"sona","course":"python","gender":"female"},
+    {"rol":127,"name":"arun","course":"testing","gender":"male"},
+    {"rol":123,"name":"shiva","course":"ml","gender":"female"},
+    {"rol":123,"name":"vrinda","course":"python","gender":"female"}
+]
+
